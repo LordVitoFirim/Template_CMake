@@ -1,6 +1,6 @@
 # Базовая шпаргалка для CMake
 
-**Пример Структуры проекта**
+## Пример Структуры проекта
 
 ```text
 Template_CMake/
@@ -26,3 +26,17 @@ Template_CMake/
 │
 └── external/
 ```
+## Основные команды
+
+- **add_library**
+- **target_sources**
+- **add_executable**
+- **target_include_directories**
+- **target_link_libraries**
+- **target_compile_features**
+- **add_subdirectory**
+- **find_package**
+
+
+
+
