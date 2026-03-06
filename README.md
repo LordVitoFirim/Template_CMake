@@ -3,7 +3,7 @@
 **Пример Структуры проекта**
 
 ```text
-MegaProject/
+Template_CMake/
 │
 ├── CMakeLists.txt
 ├── cmake/
