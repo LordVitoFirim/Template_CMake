@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.20)
 
-project(MegaProject
+project(Template_CMake
     VERSION 1.0
     DESCRIPTION "Enterprise C++ Project with dependencies"
     LANGUAGES CXX
