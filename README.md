@@ -2,8 +2,12 @@
 
 <details>
 <summary>Для тех кто уже знает и хочет вспомнить и посмотреть команды:</summary>
-    
-- **add_subdirectory**
+
+<details>
+
+<summary> - **add_subdirectory** </summary>
+
+</details>
 - **add_library**
 - **target_sources**
 - **add_executable**
