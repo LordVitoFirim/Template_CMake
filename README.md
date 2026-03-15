@@ -1,20 +1,82 @@
 # Базовая шпаргалка для CMake
 
 <details>
-<summary>Для тех кто уже знает и хочет вспомнить и посмотреть команды:</summary>
+<summary><b>Для тех кто уже знает и хочет посмотреть команды:</b></summary>
+    
+<br>
 
 <details>
+<summary><b>add_subdirectory</b></summary>
 
-<summary> - **add_subdirectory** </summary>
+<br>
+
+описание
 
 </details>
-- **add_library**
-- **target_sources**
-- **add_executable**
-- **target_include_directories**
-- **target_link_libraries**
-- **target_compile_features**
-- **find_package**
+
+<details>
+<summary><b>add_library</b></summary>
+
+<br>
+
+описание
+
+</details>
+
+<details>
+<summary><b>target_sources</b></summary>
+
+<br>
+
+описание
+
+</details>
+
+<details>
+<summary><b>add_executable</b></summary>
+
+<br>
+
+описание
+
+</details>
+
+<details>
+<summary><b>target_include_directories</b></summary>
+
+<br>
+
+описание
+
+</details>
+
+<details>
+<summary><b>target_link_libraries</b></summary>
+
+<br>
+
+описание
+
+</details>
+
+<details>
+<summary><b>target_compile_features</b></summary>
+
+<br>
+
+описание
+
+</details>
+
+<details>
+<summary><b>find_package</b></summary>
+
+<br>
+
+описание
+
+</details>
+
 </details>
 
 ## Пример Структуры проекта
