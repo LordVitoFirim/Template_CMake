@@ -130,11 +130,11 @@ Template_CMake/
 Он создается в корне проекта. Я создаю в нем общие настройки проекта и подключаю отдельные модули в нем(директории, библиотеки, которые будут нужны для сборки всего).
 
 Основные команды в нем:
-```
+```CMake
 cmake_minimum_required(VERSION 3.20)
 ```
 задает версию Cmake
-```
+```CMake
 project(Template_CMake
     VERSION 1.0
     DESCRIPTION "Enterprise C++ Project with dependencies"
@@ -142,13 +142,13 @@ project(Template_CMake
 )
 ```
 устанавливает имя метки целого проекта (**соответственно лучше называть таргет проекта по названию вашего репозитория**). Оно нужно, если будете подключать свой проект в другие, делиться им и по-хорошему для этого нужно будет прописать config, но об этом потом. Сейчас имя проекта для вашей сборки особо не нужно.
-```
+```CMake
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 ```
 команды, задающая настройки проекта.
-```
+```CMake
 add_subdirectory(src)
 add_subdirectory(app)
 add_subdirectory(tests)
@@ -164,14 +164,14 @@ add_subdirectory(tests)
 ## app
 Так как мы хотим сделать исполняемый файл, то перейдем к файлу CMakeLists.txt в директории app.
 
-```
+```CMake
 add_executable(app main.cpp)
 ```
 эта команда делает таргет исполняемого файла *app*, который содержит файл *main.cpp*, а также будет создаваться и сам исполняемый файл с именем *app*.
 
 Следующая команда прилинкует к нашему таргету *app* таргет *core*(тип библиотеки) c режимом наследования(назовем это так) PRIVATE(ниже поясню что это).
 
-```
+```CMake
 target_link_libraries(app
     PRIVATE core
 )
