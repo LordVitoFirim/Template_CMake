@@ -1,5 +1,6 @@
 # Базовая шпаргалка для CMake
-Для тех кто знает, и хочет вспомнить и посмотреть команды:
+<details>
+<summary>Для тех кто уже знает и хочет вспомнить и посмотреть команды:</summary>
 - **add_subdirectory**
 - **add_library**
 - **target_sources**
@@ -8,7 +9,7 @@
 - **target_link_libraries**
 - **target_compile_features**
 - **find_package**
-  
+</details>
 ## Пример Структуры проекта
 
 ```text
