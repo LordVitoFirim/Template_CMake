@@ -1,5 +1,14 @@
 # Базовая шпаргалка для CMake
-
+Для тех кто знает, и хочет вспомнить и посмотреть команды:
+- **add_subdirectory**
+- **add_library**
+- **target_sources**
+- **add_executable**
+- **target_include_directories**
+- **target_link_libraries**
+- **target_compile_features**
+- **find_package**
+  
 ## Пример Структуры проекта
 
 ```text
@@ -81,17 +90,6 @@ add_subdirectory(tests)
 Таким образом, главный  CMake файл у нас содержит общую информацию и легко редактируется, можем подключать просто таргеты, а всю реализацию в них оставляем на внутренние CMake файлы, к которым сейчас и перейдем. 
 
 Смотрите подробнее в корневом файле.
-
-## Основные команды
-
-- **add_subdirectory**
-- **add_library**
-- **target_sources**
-- **add_executable**
-- **target_include_directories**
-- **target_link_libraries**
-- **target_compile_features**
-- **find_package**
 
 
 
