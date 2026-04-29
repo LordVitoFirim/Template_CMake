@@ -130,6 +130,40 @@ target_compile_features(core
 </details>
 
 <details>
+<summary><b>enable_testing</b></summary>
+
+<br>
+
+```cmake
+enable_testing()
+```
+
+Включает поддержку тестов в проекте.
+
+Сама команда тесты еще не создает. Она просто говорит CMake: в этом проекте будут
+тесты, подготовь возможность запускать их через `ctest`.
+
+</details>
+
+<details>
+<summary><b>add_test</b></summary>
+
+<br>
+
+```cmake
+add_test(NAME math_utils COMMAND test_math)
+```
+
+Регистрирует исполняемый файл как тест.
+
+`NAME math_utils` — имя теста, которое будет показывать CTest.
+
+`COMMAND test_math` — команда, которую CTest должен запустить. В нашем случае это
+исполняемый файл `test_math`.
+
+</details>
+
+<details>
 <summary><b>find_package</b></summary>
 
 <br>
