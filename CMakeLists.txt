@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.20)
 
 project(Template_CMake
     VERSION 1.0
-    DESCRIPTION "Enterprise C++ Project with dependencies"
+    DESCRIPTION "Basic C++ project template with CMake"
     LANGUAGES CXX
 )
 
@@ -13,6 +13,8 @@ project(Template_CMake
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
+
+include(cmake/CompilerWarnings.cmake)
 
 # -------------------------------
 # Поиск внешних пакетов
@@ -27,4 +29,6 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 add_subdirectory(src)
 add_subdirectory(app)
+
+enable_testing()
 add_subdirectory(tests)

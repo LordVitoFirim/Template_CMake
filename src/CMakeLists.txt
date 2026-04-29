@@ -10,12 +10,8 @@ target_include_directories(core
         ${PROJECT_SOURCE_DIR}/include
 )
 
-target_link_libraries(core
-    PUBLIC
-        Eigen3::Eigen
-        Threads::Threads
-)
-
 target_compile_features(core
     PUBLIC cxx_std_20
 )
+
+enable_project_warnings(core)
